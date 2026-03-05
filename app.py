@@ -1047,7 +1047,7 @@ def page_dashboard():
         p2=a2=f2=d2=None
         if cmp_on:
             p2 = st.selectbox("Pattern 2",  ["Random Noise","Sine Wave","Cosine Wave"], key="p2")
-            a2 = st.slider("Amplitude 2",  100., 10000., 4000., 200., key="a2")
+            a2 = st.slider("Amplitude 2",  0., 5000., 200., 50., key="a2")
             f2 = st.slider("Frequency 2",  0.5,  10.,    5.,   0.5,  key="f2")
             d2 = st.slider("Drift 2",     -500.,  500., -100., 10.,  key="d2")
 
@@ -1434,6 +1434,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
