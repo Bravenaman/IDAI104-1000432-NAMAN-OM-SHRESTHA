@@ -178,7 +178,7 @@ All charts include:
 ## 📁 Project Structure
 
 ```bash
-IDAI104-1000414-ADITYA-JITENDRA-KUMAR-SAHANI/
+IDAI104-1000432-NAMAN-OM-SHRESTHA/
 │
 ├── assets/
 │   └── App Screenshots/
@@ -196,8 +196,8 @@ IDAI104-1000414-ADITYA-JITENDRA-KUMAR-SAHANI/
 ### Clone Repository
 
 ```bash
-git https://github.com/adityasahani392217/IDAI104-1000414-ADITYA-JITENDRA-KUMAR-SAHANI
-cd  IDAI104-1000414-ADITYA-JITENDRA-KUMAR-SAHANI
+cd  https://github.com/Bravenaman/IDAI104-1000432-NAMAN-OM-SHRESTHA
+cd  IDAI104-1000432-NAMAN-OM-SHRESTHA
 ```
 ### Install Dependencies
 
@@ -266,4 +266,5 @@ This project demonstrates:
 ### 📄 License
 
 This application was exclusively developed for academic assessment and portfolio demonstration. It serves as an open-source technical showcase demonstrating applied mathematical modeling, algorithmic financial analysis, and large-scale data visualization in a practical software setting.
+
 
