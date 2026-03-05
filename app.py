@@ -1031,11 +1031,11 @@ def page_dashboard():
         # ── SIMULATION CONTROLS (FA-2 Stage 6) ───────────────────────────────
         st.markdown('<p class="sh">📊 SIMULATION</p>', unsafe_allow_html=True)
         pattern   = st.selectbox("Wave Pattern",  ["Sine Wave","Cosine Wave","Random Noise"])
-        amplitude = st.slider("Amplitude (A — Volatility)", -50., 50., 0., 5.,
+        amplitude = st.slider("Amplitude (A — Volatility)", 10., 500., 50., 10.,
                               help="Controls price swing size. Higher = more volatile market.")
         frequency = st.slider("Frequency (f — Trading Speed)", 0.5, 10., 2., 0.5,
                               help="How fast price oscillates. Higher = more active market.")
-        drift     = st.slider("Drift (Market Trend)", -500., 500., 50., 10.,
+        drift     = st.slider("Drift (Market Trend)", -50., 50., 0., 5.,
                               help="Long-term direction. +ve = Bull market, -ve = Bear market.")
 
         st.divider()
@@ -1434,6 +1434,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
