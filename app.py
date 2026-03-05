@@ -1031,11 +1031,11 @@ def page_dashboard():
         # ── SIMULATION CONTROLS (FA-2 Stage 6) ───────────────────────────────
         st.markdown('<p class="sh">📊 SIMULATION</p>', unsafe_allow_html=True)
         pattern   = st.selectbox("Wave Pattern",  ["Sine Wave","Cosine Wave","Random Noise"])
-        amplitude = st.slider("Amplitude (A — Volatility)", 5., 200., 20., 5.,
+        amplitude = st.slider("Amplitude (A — Volatility)", 100., 5000., 1000., 100.,
                               help="Controls price swing size. Higher = more volatile market.")
         frequency = st.slider("Frequency (f — Trading Speed)", 0.5, 10., 2., 0.5,
                               help="How fast price oscillates. Higher = more active market.")
-        drift     = st.slider("Drift (Market Trend)", -50., 50., 0., 5.,
+        drift     = st.slider("Drift (Market Trend)", -500., 500., 50., 10.,
                               help="Long-term direction. +ve = Bull market, -ve = Bear market.")
 
         st.divider()
@@ -1047,7 +1047,7 @@ def page_dashboard():
         p2=a2=f2=d2=None
         if cmp_on:
             p2 = st.selectbox("Pattern 2",  ["Random Noise","Sine Wave","Cosine Wave"], key="p2")
-            a2 = st.slider("Amplitude 2",  0., 5000., 200., 50., key="a2")
+            a2 = st.slider("Amplitude 2",  100., 10000., 4000., 200., key="a2")
             f2 = st.slider("Frequency 2",  0.5,  10.,    5.,   0.5,  key="f2")
             d2 = st.slider("Drift 2",     -500.,  500., -100., 10.,  key="d2")
 
@@ -1432,11 +1432,4 @@ def main():
     else:                    page_dashboard()
 
 if __name__ == "__main__":
-
     main()
-
-
-
-
-
-
